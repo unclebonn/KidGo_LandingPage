@@ -5,9 +5,81 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #ECF8FD;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #174251;
+}
+
+p {
+  margin: 0;
+}
+
+
+.phone_image {
+  position: relative;
+
+  .msg_1,
+  .msg_2,
+  .msg_3 {
+    width: 200px;
+    object-fit: fill;
+    background-image: url(../public/message_background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 100;
+    top: -10px;
+    right: -30px;
+    padding: 5px 30px 0px 20px;
+  }
+
+  .msg_2 {
+    right: -50px;
+    top: 90px;
+  }
+
+  .msg_3 {
+    top: 210px;
+    right: 0px;
+  }
+}
+
+
+.msg_1 .msg_1--detail,
+.msg_2 .msg_2--detail,
+.msg_3 .msg_3--detail {
+  margin-bottom: 30px;
+
+  p {
+    width: 80%
+  }
+
+  ;
+
+  h3 {
+    margin: 0;
+  }
+}
+
+
+.contactBtn:hover{
+  color: white;
+  background-color: #F2C740 !important;
+}
+
+p{
+  color: #328EAE;
 }

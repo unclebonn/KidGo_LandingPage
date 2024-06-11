@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import "./landingpage.css";
-import { Input } from "antd";
+import { Col, Input, Row } from "antd";
 
 type MyComponentProps = {};
 
-const MyComponent: React.FC<MyComponentProps> = () => {
+const LandingPage: React.FC<MyComponentProps> = () => {
   const handleClick = (message: string) => {
     alert(message);
   };
@@ -17,15 +17,15 @@ const MyComponent: React.FC<MyComponentProps> = () => {
           entry.target.classList.add('visible');
           entry.target.classList.remove('hidden');
           // observer.unobserve(entry.target);
-        }else {
+        } else {
           entry.target.classList.add('hidden');
           entry.target.classList.remove('visible');
         }
       },
-      {
-        rootMargin: '0px 0px -20% 0px'
-      }   
-    );
+        {
+          rootMargin: '0px 0px -20% 0px'
+        }
+      );
     });
 
     items.forEach(item => {
@@ -34,21 +34,7 @@ const MyComponent: React.FC<MyComponentProps> = () => {
   }, [])
 
   return (
-    <div className="div">
-      <header className="header">
-        <div className="logo">
-          <img loading="lazy" src="kidgoLogo.png" alt="Logo" className="img" />
-        </div>
-        <nav className="nav">
-          <div className="nav-links">
-            <button className="nav-link" onClick={() => handleClick('Trang chủ')}>Trang chủ</button>
-            <button className="nav-link" onClick={() => handleClick('Hoạt động')}>Hoạt động</button>
-            <button className="nav-link" onClick={() => handleClick('Liên hệ')}>Liên hệ</button>
-            <button className="nav-link" onClick={() => handleClick('Blog')}>Blog</button>
-          </div>
-          <button className="cta" onClick={() => handleClick('Đặt xe')}>Đặt xe</button>
-        </nav>
-      </header>
+    <Row className="div">
 
       <section className="about item">
         <div className="content">
@@ -191,28 +177,9 @@ const MyComponent: React.FC<MyComponentProps> = () => {
         </div>
       </section>
 
-      <footer className="footer">
-        <div className="content">
-          <div className="newsletter">
-            <div className="DangKiThongBao">
-              <img loading="lazy" src="sendmail.png" alt="Newsletter" className="img-11" />
-              <h3 className="title">Đăng ký để nhận thông báo mới</h3>
-            </div>
-            <div className="text-section">
-
-              <p className="description">
-                Donec eget dignissim id sit egestas in consequat volutpat elementum donec et.
-              </p>
-            </div>
-            <div className="input-group">
-              <Input size="large" name="mail" placeholder="Nhập email" />
-              <button className="btn-subscribe" onClick={() => handleClick('Đăng ký')}>Đăng ký</button>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
+     
+    </Row>
   );
 };
 
-export default MyComponent;
+export default LandingPage;
