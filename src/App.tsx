@@ -8,7 +8,8 @@ import ActivityPage from './page/howitwork_page';
 import ContactPage from './page/contact';
 import BlogPage from './page/blog';
 import ProductPage from './page/booking_page';
-import { Footer } from 'antd/es/layout/layout';
+import Footer from './shared/layout/footer';
+
 
 function App() {
 
