@@ -37,7 +37,7 @@ const BlogPage: React.FC = () => {
 
 
     return (
-        <Row>
+        <Row justify={"center"} style={{ paddingTop:"100px"}}>
             <BlogItem data={fakeData} />
         </Row>
     )

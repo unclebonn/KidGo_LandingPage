@@ -29,42 +29,50 @@ const ProductPage: React.FC = () => {
     }, [])
 
     return (
-        <Row style={{ margin: "30px 0px", border: "1px solid black", padding: 30, borderRadius: 10, borderWidth: "thick" }} gutter={[20, 0]} align={"middle"} justify={"center"}>
-            <Col span={17}>
-                <Image width={"100%"} src="../../product.png" alt="product" />
-            </Col>
-            <Col span={1} style={{ height: "80vh" }}>
-                <Divider style={{borderColor:"rgba(0,0,0,0.4)", height:"100%" }} type="vertical" />
-            </Col>
-            <Col span={6}>
-                <Row style={{ textAlign: "center" }} justify={"center"}>
-                    <Col className="item" span={24}>
-                        <h1 style={{ margin: 0, fontSize: 80 }}>Sản</h1>
+        <Row style={{ paddingTop: 100 }} justify={"center"}>
+            <Col span={22}>
+                <Row style={{ margin:"30px 0px", border: "1px solid black", padding: 30, borderRadius: 10, borderWidth: "thick" }} gutter={[20, 0]} align={"middle"} justify={"center"}>
+                    <Col xs={24} md={17} xl={17}>
+                        <Image width={"100%"} src="../../product.png" alt="product" />
                     </Col>
-                    <Col className="item" span={24} style={{ textAlign: "right" }}>
-                        <h1 style={{ margin: 0, fontSize: 40 }}>phẩm</h1>
+                    <Col xs={0} md={1} xl={1} style={{ height: "80vh" }}>
+                        <Divider style={{ borderColor: "rgba(0,0,0,0.4)", height: "100%" }} type="vertical" />
                     </Col>
-                    <Col className="item" span={12} style={{ textAlign: "right" }}>
-                        <h1 style={{ fontSize: 30 }}>sẽ</h1>
+                    <Col xs={24} md={0} xl={0}>
+                        <Divider style={{ borderColor: "rgba(0,0,0,0.4)", height: "100%" }} type="horizontal" />
                     </Col>
-                    <Col className="item" span={12}>
-                        <h1 style={{ fontSize: 30 }}>sớm</h1>
-                    </Col>
-                    <Col className="item" span={12}>
-                        <h1 style={{ fontSize: 30 }}>được</h1>
-                    </Col>
-                    <Col className="item" span={12}>
-                        <h1 style={{ fontSize: 30 }}>hoàn</h1>
-                    </Col>
-                    <Col className="item" span={12}>
-                        <h1 style={{ fontSize: 30 }}>thiện !</h1>
-                    </Col>
+                    <Col xs={24} md={6} xl={6}>
+                        <Row style={{ textAlign: "center" }} justify={"center"}>
+                            <Col className="item" span={24}>
+                                <h1 style={{ margin: 0, fontSize: 80 }}>Sản</h1>
+                            </Col>
+                            <Col className="item" span={24} style={{ textAlign: "right" }}>
+                                <h1 style={{ margin: 0, fontSize: 40 }}>phẩm</h1>
+                            </Col>
+                            <Col className="item" span={12} style={{ textAlign: "right" }}>
+                                <h1 style={{ fontSize: 30 }}>sẽ</h1>
+                            </Col>
+                            <Col className="item" span={12}>
+                                <h1 style={{ fontSize: 30 }}>sớm</h1>
+                            </Col>
+                            <Col className="item" span={12}>
+                                <h1 style={{ fontSize: 30 }}>được</h1>
+                            </Col>
+                            <Col className="item" span={12}>
+                                <h1 style={{ fontSize: 30 }}>hoàn</h1>
+                            </Col>
+                            <Col className="item" span={12}>
+                                <h1 style={{ fontSize: 30 }}>thiện !</h1>
+                            </Col>
 
-                    <Col className="item" span={24}>
-                        <h1 style={{ fontSize: 40, color: "lightskyblue" }}>Các bạn chờ nhé !</h1>
+                            <Col className="item" span={24}>
+                                <h1 style={{ fontSize: 40, color: "lightskyblue" }}>Các bạn chờ nhé !</h1>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
             </Col>
+
         </Row>
     )
 }

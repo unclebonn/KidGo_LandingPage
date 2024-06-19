@@ -173,10 +173,8 @@
 }
 
 .timeline-item {
-  flex: 1;
   background-color: #328eae;
   padding: 27px 8px;
-
   text-align: center;
   color: #ecf8fd;
 }

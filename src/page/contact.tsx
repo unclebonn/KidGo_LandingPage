@@ -11,9 +11,9 @@ const ContactPage: React.FC = () => {
     }
 
     return (
-        <Row gutter={[0, 30]} style={{ margin: "20px 0px", padding: "80px" }} align={"middle"} justify={"center"}>
+        <Row gutter={[0, 30]} style={{ margin: "20px 0px" }} align={"middle"} justify={"center"}>
             {/* lien lac chung toi */}
-            <Col span={24}>
+            <Col style={{paddingTop:80}} span={24}>
                 <Row align={"middle"} justify={"center"}>
                     <h1>Thông tin tư vấn</h1>
                 </Row>
@@ -21,10 +21,10 @@ const ContactPage: React.FC = () => {
                     <p>Nếu có bất kỳ câu hỏi nào về các dịch vụ của KidGo, vui lòng liên hệ với chúng tôi</p>
                 </Row>
             </Col>
-            <Col span={8}>
+            <Col xs={24} md={10} xl={8}>
                 <h4>Liên lạc chúng tôi qua</h4>
                 <Row align={"middle"}>
-                    <Col span={4}>
+                    <Col xs={4} md={5} xl={4}>
                         <Row>
                             <div>
                                 <img src="../../email_icon.png" alt="" />
@@ -32,7 +32,7 @@ const ContactPage: React.FC = () => {
 
                         </Row>
                     </Col>
-                    <Col span={20}>
+                    <Col xs={20} md={19} xl={20}>
                         <Row>
                             <div>
                                 <h4 style={{ margin: 0 }}>Email</h4>
@@ -42,12 +42,12 @@ const ContactPage: React.FC = () => {
                     </Col>
                 </Row>
                 <Row align={"middle"}>
-                    <Col span={4}>
+                    <Col xs={4} md={5} xl={4}>
                         <div>
                             <img src="../../phone_icon.png" alt="" />
                         </div>
                     </Col>
-                    <Col span={20}>
+                    <Col xs={20} md={19} xl={20}>
                         <div>
                             <h4 style={{ margin: 0 }}>Số điện thoại</h4>
                             <p>093 343 80 42</p>
@@ -60,12 +60,12 @@ const ContactPage: React.FC = () => {
                     </Col>
                     <Col span={24}>
                         <Row gutter={[5, 0]}>
-                            <Col span={2}>
+                            <Col xs={2} md={2} xl={2}>
                                 <a target="_blank" href="https://www.facebook.com/profile.php?id=61559638062969">
                                     <img src="../../Facebook.png" alt="" />
                                 </a>
                             </Col>
-                            <Col span={2}>
+                            <Col xs={2} md={2} xl={2}>
                                 <a target="_blank" href="https://www.instagram.com/kidgo_2024">
                                     <img src="../../Instagram.png" alt="" />
                                 </a>
@@ -78,7 +78,7 @@ const ContactPage: React.FC = () => {
 
 
             {/* thong tin tu van */}
-            <Col span={16} style={contactStyles}>
+            <Col xs={24} md={14} xl={16} style={contactStyles}>
                 <Form layout="vertical">
                     <Row>
                         <Col span={24}>

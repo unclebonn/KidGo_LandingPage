@@ -19,11 +19,11 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      <div style={{ width: "1170px", margin: "0 auto" }}>
+      <div>
         <Routes>
           <Route index path='/' element={<LandingPage />} />
-          <Route path='/hoat-dong' element={<ActivityPage />} />
-          <Route path='/lien-he' element={<ContactPage />} />
+          {/* <Route path='/hoat-dong' element={<ActivityPage />} />
+          <Route path='/lien-he' element={<ContactPage />} /> */}
           <Route path='/bai-viet' element={<BlogPage />} />
           <Route path='/dat-xe' element={<ProductPage />} />
         </Routes>

@@ -1,17 +1,33 @@
-import { Col, Row } from "antd"
+import { BarsOutlined } from "@ant-design/icons"
+import { Col, Drawer, Row } from "antd"
+import { useState } from "react"
 import { useNavigate, useNavigation } from "react-router-dom"
 
 const Header: React.FC = () => {
+    const [open, setOpen] = useState(false);
     const navigate = useNavigate()
 
-    const handleClick = (path:string) => {
+    const handleClick = (path: string) => {
         navigate(`/${path}`)
     }
 
+
+    const linkStyles: React.CSSProperties = {
+        color: `${open ? "black" : "white"}`
+    }
+
+
+    const showDrawer = () => {
+        setOpen(true);
+    };
+
+    const onClose = () => {
+        setOpen(false);
+    };
+
     return (
         <div>
-            <header className="header" >
-
+            <header className="header" style={{ zIndex: 10, width: "calc(100% - 120px) ", position: "fixed" }} >
                 <Col className="logo" xs={20} md={2} xl={2}>
                     <Row>
                         <img loading="lazy" src="kidgoLogo.png" alt="Logo" className="img" />
@@ -22,17 +38,66 @@ const Header: React.FC = () => {
                     <Row style={{ display: "flex", justifyContent: "right" }}>
                         <nav className="nav">
                             <div className="nav-links">
-                                <button className="nav-link" onClick={() => handleClick('')}>Trang chủ</button>
-                                <button className="nav-link" onClick={() => handleClick('hoat-dong')}>Hoạt động</button>
-                                <button className="nav-link" onClick={() => handleClick('lien-he')}>Liên hệ</button>
+                                <button className="nav-link" onClick={() => handleClick('')}>
+                                    <a style={linkStyles} href="/#landing_page">
+                                        Trang chủ
+                                    </a>
+                                </button>
+                                <button className="nav-link" >
+                                    <a style={linkStyles} href="/#activitypage">
+                                        Hoạt động
+                                    </a>
+                                </button>
+                                <button className="nav-link">
+                                    <a style={linkStyles} href="/#contactpage">
+                                        Liên hệ
+                                    </a>
+                                </button>
                                 <button className="nav-link" onClick={() => handleClick('bai-viet')}>Blog</button>
                             </div>
                             <button className="cta" onClick={() => handleClick('dat-xe')}>Đặt xe</button>
                         </nav>
                     </Row>
                 </Col>
+
                 <Col xs={4} md={0} xl={0}>
-                    123fdfds
+                    <BarsOutlined onClick={showDrawer} style={{ cursor: "pointer", fontSize: 25 }} />
+                </Col>
+                <Col xs={24} md={0} xl={0}>
+                    <Drawer width={250} onClose={onClose} open={open}>
+                        <Row justify={"center"} gutter={[0, 20]}>
+
+                            <button className="cta" onClick={() => handleClick('')}>
+                                <a style={linkStyles} href="/#landing_page">
+                                    Trang chủ
+                                </a>
+                            </button>
+
+                            <button className="cta" >
+                                <a style={linkStyles} href="/#activitypage">
+                                    Hoạt động
+                                </a>
+                            </button>
+
+                            <button className="cta">
+                                <a style={linkStyles} href="/#contactpage">
+                                    Liên hệ
+                                </a>
+                            </button>
+
+                            <button className="cta" onClick={() => handleClick('bai-viet')}>
+                                <a style={linkStyles} >
+                                    Blog
+                                </a>
+                            </button>
+
+                            <button className="cta" onClick={() => handleClick('dat-xe')}>
+                                <a style={linkStyles} >
+                                    Đặt xe
+                                </a></button>
+
+                        </Row>
+                    </Drawer>
                 </Col>
             </header>
         </div>
