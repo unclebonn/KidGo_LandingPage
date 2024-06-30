@@ -3,7 +3,7 @@ import { Input } from "antd"
 const Footer: React.FC = () => {
 
 
-    const handleClick = (text:string) => {
+    const handleClick = (text: string) => {
 
     }
 
@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
                         <div className="text-section">
 
                             <p className="description">
-                                Donec eget dignissim id sit egestas in consequat volutpat elementum donec et.
+                                Đăng ký để nhận thông tin mới nhất nhé
                             </p>
                         </div>
                         <div className="input-group">

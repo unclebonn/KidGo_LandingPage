@@ -31,7 +31,7 @@ const ProductPage: React.FC = () => {
     return (
         <Row style={{ paddingTop: 100 }} justify={"center"}>
             <Col span={22}>
-                <Row style={{ margin:"30px 0px", border: "1px solid black", padding: 30, borderRadius: 10, borderWidth: "thick" }} gutter={[20, 0]} align={"middle"} justify={"center"}>
+                <Row style={{ margin: "30px 0px", border: "1px solid black", padding: 30, borderRadius: 10, borderWidth: "thick" }} gutter={[20, 0]} align={"middle"} justify={"center"}>
                     <Col xs={24} md={17} xl={17}>
                         <Image width={"100%"} src="../../product.png" alt="product" />
                     </Col>
@@ -43,7 +43,11 @@ const ProductPage: React.FC = () => {
                     </Col>
                     <Col xs={24} md={6} xl={6}>
                         <Row style={{ textAlign: "center" }} justify={"center"}>
-                            <Col className="item" span={24}>
+                            <Col className="item" span={24} style={{ textAlign: "center" }}>
+                                <h1 style={{ margin: 0, fontSize: 40 }}>Sản phẩm sẽ sớm được hoàn thiện</h1>
+                            </Col>
+
+                            {/* <Col className="item" span={24}>
                                 <h1 style={{ margin: 0, fontSize: 80 }}>Sản</h1>
                             </Col>
                             <Col className="item" span={24} style={{ textAlign: "right" }}>
@@ -63,10 +67,10 @@ const ProductPage: React.FC = () => {
                             </Col>
                             <Col className="item" span={12}>
                                 <h1 style={{ fontSize: 30 }}>thiện !</h1>
-                            </Col>
+                            </Col> */}
 
                             <Col className="item" span={24}>
-                                <h1 style={{ fontSize: 40, color: "lightskyblue" }}>Các bạn chờ nhé !</h1>
+                                <h1 style={{ fontSize: 40, color: "lightskyblue" }}>Các bạn chờ nhé!</h1>
                             </Col>
                         </Row>
                     </Col>

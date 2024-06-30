@@ -36,7 +36,7 @@ const ContactPage: React.FC = () => {
                         <Row>
                             <div>
                                 <h4 style={{ margin: 0 }}>Email</h4>
-                                <p>undungkidgo@gmail.com</p>
+                                <p>ungdungkidgo@gmail.com</p>
                             </div>
                         </Row>
                     </Col>

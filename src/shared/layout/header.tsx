@@ -26,11 +26,13 @@ const Header: React.FC = () => {
     };
 
     return (
-        <div>
-            <header className="header" style={{ zIndex: 10, width: "calc(100% - 120px) ", position: "fixed" }} >
+        <Row justify={"space-between"}>
+            <header className="header" style={{ zIndex: 10, width: "calc(100% - 40px) ", position: "fixed" }} >
                 <Col className="logo" xs={20} md={2} xl={2}>
                     <Row>
-                        <img loading="lazy" src="kidgoLogo.png" alt="Logo" className="img" />
+                        <a href="/#landing_page">
+                            <img loading="lazy" src="kidgoLogo.png" alt="Logo" className="img" />
+                        </a>
                     </Row>
                 </Col>
 
@@ -43,7 +45,7 @@ const Header: React.FC = () => {
                                         Trang chủ
                                     </a>
                                 </button>
-                                <button className="nav-link" >
+                                {/* <button className="nav-link" >
                                     <a style={linkStyles} href="/#activitypage">
                                         Hoạt động
                                     </a>
@@ -52,8 +54,8 @@ const Header: React.FC = () => {
                                     <a style={linkStyles} href="/#contactpage">
                                         Liên hệ
                                     </a>
-                                </button>
-                                <button className="nav-link" onClick={() => handleClick('bai-viet')}>Blog</button>
+                                </button> */}
+                                {/* <button className="nav-link" onClick={() => handleClick('bai-viet')}>Blog</button> */}
                             </div>
                             <button className="cta" onClick={() => handleClick('dat-xe')}>Đặt xe</button>
                         </nav>
@@ -73,7 +75,7 @@ const Header: React.FC = () => {
                                 </a>
                             </button>
 
-                            <button className="cta" >
+                            {/* <button className="cta" >
                                 <a style={linkStyles} href="/#activitypage">
                                     Hoạt động
                                 </a>
@@ -83,13 +85,13 @@ const Header: React.FC = () => {
                                 <a style={linkStyles} href="/#contactpage">
                                     Liên hệ
                                 </a>
-                            </button>
+                            </button> */}
 
-                            <button className="cta" onClick={() => handleClick('bai-viet')}>
+                            {/* <button className="cta" onClick={() => handleClick('bai-viet')}>
                                 <a style={linkStyles} >
                                     Blog
                                 </a>
-                            </button>
+                            </button> */}
 
                             <button className="cta" onClick={() => handleClick('dat-xe')}>
                                 <a style={linkStyles} >
@@ -100,7 +102,7 @@ const Header: React.FC = () => {
                     </Drawer>
                 </Col>
             </header>
-        </div>
+        </Row>
     )
 }
 
