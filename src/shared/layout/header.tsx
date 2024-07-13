@@ -58,7 +58,6 @@ const Header: React.FC = () => {
                                 {/* <button className="nav-link" onClick={() => handleClick('bai-viet')}>Blog</button> */}
                             </div>
                             <button className="cta" onClick={() => handleClick('dat-xe')}>Đặt xe</button>
-                            <a href="kidgo://Result">Về app</a>
                         </nav>
                     </Row>
                 </Col>
@@ -74,6 +73,9 @@ const Header: React.FC = () => {
                                 <a style={linkStyles} href="/#landing_page">
                                     Trang chủ
                                 </a>
+                            </button>
+                            <button className="cta" onClick={() => handleClick('')}>
+                                <a href="kidgo://Result">Về app</a>
                             </button>
 
                             {/* <button className="cta" >
@@ -103,7 +105,7 @@ const Header: React.FC = () => {
                     </Drawer>
                 </Col>
             </header>
-        </Row>
+        </Row >
     )
 }
 
