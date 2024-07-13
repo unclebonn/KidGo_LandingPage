@@ -75,7 +75,7 @@ const Header: React.FC = () => {
                                 </a>
                             </button>
                             <button className="cta" onClick={() => handleClick('')}>
-                                <a href="exp+kidgo://expo-development-client/?url=http%3A%2F%2F192.168.1.12%3A8081">Về app</a>
+                                <a href="kidgo://Result">Về app</a>
                             </button>
 
                             {/* <button className="cta" >
