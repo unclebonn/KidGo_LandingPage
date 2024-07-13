@@ -58,6 +58,7 @@ const Header: React.FC = () => {
                                 {/* <button className="nav-link" onClick={() => handleClick('bai-viet')}>Blog</button> */}
                             </div>
                             <button className="cta" onClick={() => handleClick('dat-xe')}>Đặt xe</button>
+                            <a href="kidgo://Result">Về app</a>
                         </nav>
                     </Row>
                 </Col>
