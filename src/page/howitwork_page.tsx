@@ -60,18 +60,20 @@ const ActivityPage: React.FC = () => {
                 <Col xs={24} md={10} xl={10}>
                     <Row gutter={[0, 20]} justify={"center"}>
                         <Col xs={20} md={24} xl={24}>
-                            <Row>
-                                <h2>Hoạt động</h2>
-                                <p>KidGo tự hào mang đến cho phụ huynh và học sinh dịch vụ đưa đón an toàn, tiện lợi và chuyên nghiệp.
-
-                                </p>
+                            <Row wrap={false}>
+                                <Col span={24}>
+                                    <h2>Hoạt động</h2>
+                                    <p>KidGo tự hào mang đến cho phụ huynh và học sinh dịch vụ đưa đón an toàn, tiện lợi và chuyên nghiệp.</p>
+                                </Col>
                             </Row>
                         </Col>
                         <Col xs={20} md={24} xl={24}>
                             <Row>
-                                <h2>Hoạt động</h2>
-                                <p>Với lộ trình được tính toán kỹ lưỡng, KidGo không chỉ giúp tiết kiệm thời gian mà còn đảm bảo sự
-                                    an tâm cho phụ huynh trong mỗi chuyến đi. Dưới đây là quy trình hoạt động và cách thức cập nhật thông tin của KidGo.</p>
+                                <Col>
+                                    <h2>Hoạt động</h2>
+                                    <p>Với lộ trình được tính toán kỹ lưỡng, KidGo không chỉ giúp tiết kiệm thời gian mà còn đảm bảo sự
+                                        an tâm cho phụ huynh trong mỗi chuyến đi. Dưới đây là quy trình hoạt động và cách thức cập nhật thông tin của KidGo.</p>
+                                </Col>
                             </Row>
                         </Col>
                     </Row>
@@ -171,18 +173,21 @@ const ActivityPage: React.FC = () => {
                     <Row gutter={[0, 30]}>
                         <Col span={24}>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur.
-                                Arcu odio eros pellentesque ac condimentum nisi.
-                                Eros non porttitor laoreet auctor accumsan. Lacinia pellentesque neque convallis auctor proin. Ut turpis vel interdum eu pulvinar.
-                                Sit posuere ultrices scelerisque amet nunc tincidunt.
+                                Công ty luôn mong muốn các bạn đồng hành phải không ngừng suy nghĩ, bay bổng với những idea,
+                                tuy có thể khó thực hiện, hơi điên rồ, nhưng phải nghĩ để trí óc được sử dụng hết mức có thể.
                             </p>
                         </Col>
                         <Col span={24}>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur.
-                                Arcu odio eros pellentesque ac condimentum nisi.
-                                Eros non porttitor laoreet auctor accumsan. Lacinia pellentesque neque convallis auctor proin. Ut turpis vel interdum eu pulvinar.
-                                Sit posuere ultrices scelerisque amet nunc tincidunt.
+                                Dám nói, nói lên idea của mình để mọi người cùng hiểu.
+                                Có thể 1 người thì idea đó khó thực hiện nhưng với nhiều người thì điều đó không phải điều không thể.
+                            </p>
+                        </Col>
+                        <Col span={24}>
+                            <p>
+                                Cuối cùng là dám thực hiện, công ty luôn mong muốn các bạn đồng hành phải dám thực hiện,
+                                tìm hiểu, khảo sát, làm bất cứ mọi thứ để thực hiện được điều mong muốn. Nếu kết quả trả lại là fail thì bạn cũng đừng buồn,
+                                vì bạn đã cố gắng thực hiện, thất bại là mẹ thành công và cũng là bước đệm để bạn thực hiện những điều tuyệt vời khác.
                             </p>
                         </Col>
                     </Row>

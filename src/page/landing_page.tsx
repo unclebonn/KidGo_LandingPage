@@ -83,7 +83,7 @@ const LandingPage: React.FC<MyComponentProps> = () => {
       <Col style={{ paddingTop: 120 }} span={24} id="landing_page">
         <section className="item">
           <Row justify={"center"}>
-            <Col xs={22} md={10} xl={10} className="text-section">
+            <Col style={{ display: "grid", flexDirection: "column", alignItems: "center", justifyContent: "space-between" }} xs={22} md={10} xl={10} className="text-section">
               <h2 className="title">VỀ CHÚNG TÔI</h2>
               <p id="info" className="description">
                 Với thời đại phát triển và nền kinh tế khó khăn hiện tại, phụ huynh phải hết sức mình làm việc vì để cho con họ có một cuộc sống tốt hơn. Vì thế, cũng sẽ có lúc họ bận rộn mà không thể đến đón con trẻ học tại trường được, khi đó họ không thể nhờ người thân đón trẻ, thì bây giờ phải làm sao?
@@ -93,6 +93,12 @@ const LandingPage: React.FC<MyComponentProps> = () => {
                 <br /><br />
                 Là một ứng dụng thay thế phụ huynh đưa đón con trẻ khi họ bận việc. Với tiêu chí là chất lượng và an toàn nhất có thể, phụ huynh có thể an tâm khi sử dụng dịch vụ.
               </p>
+
+              <div style={{ marginTop: 20 }}>
+                <a target="_blank" href="https://drive.usercontent.google.com/download?id=1xYwy701gLTwOGrESJUE_I8y5HRt7bTQY&export=download&authuser=0&confirm=t&uuid=84f621e3-502e-4efc-a26e-689778a94e0b&at=APZUnTVkaUb9Hfu0hnm2d9pPRWcS%3A1720945224650">
+                  <img width={240} height={100} src="chplay.png"></img>
+                </a>
+              </div>
             </Col>
             <Col xs={22} md={10} xl={10}>
               <img loading="lazy" src="car.png" alt="About Us" className="img-2" />
