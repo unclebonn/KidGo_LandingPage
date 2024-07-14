@@ -75,7 +75,7 @@ const Header: React.FC = () => {
                                 </a>
                             </button>
                             <button className="cta" onClick={() => handleClick('')}>
-                                <a href="exp+kidgo://Result">Về app</a>
+                                <a href="exp+kidgo://Result?id1=Crs32ndXIg99yfHFFZa2whizJpBSvPe8wGmcSEVP5EFvYb7M+QRO2RsnwGKU4y2KRbUUHcs4uYtOW0OyX%2FqlXQ%3D%3D&id2=tgnQL4CUGi5AjaRlkDqQnezRtcdSkpsp%2FlCE+H5E4f1Poo3RTlKrL2aW2yak4jf2HHxRQU+sai3k1NlEqEjzPw%3D%3D&code=00&id=eae79736d11f465a8b00b59aecf31829&cancel=false&status=PAID&orderCode=681610&_rsc=9an77">Về app</a>
                             </button>
 
                             {/* <button className="cta" >
